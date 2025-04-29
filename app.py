@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
 
 # Setup Flask-Login
-login_manager = LoginManager()
+login_manager = LoginManager();
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
